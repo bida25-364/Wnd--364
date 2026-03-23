@@ -1,44 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Urban Eats</title>
-    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<header>
+<!-- HEADER -->
+<header class="bg-dark text-white text-center p-3">
     <h1>Urban Eats</h1>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="contact.html">Contact</a>
-        <a href="feedback.html">Feedback</a>
+        <a href="index.html" class="text-white m-2">Home</a>
+        <a href="about.html" class="text-white m-2">About</a>
+        <a href="menu.html" class="text-white m-2">Menu</a>
+        <a href="contact.html" class="text-white m-2">Contact</a>
+        <a href="feedback.html" class="text-white m-2">Feedback</a>
     </nav>
 </header>
 
-<h2>Our Menu</h2>
+<!-- MENU SECTION -->
+<section class="container mt-5">
+    <h2 class="text-center mb-4">Our Menu</h2>
 
-<div class="menu-item">
-    <h3>Burger</h3>
-    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349" width="300">
-</div>
+    <div class="row">
 
-<div class="menu-item">
-    <h3>Pizza</h3>
-    <img src="https://images.unsplash.com/photo-1601924582975-7e8c0b2b6b0f" 
-     alt="Pizza" class="img-fluid rounded mb-3">
-</div>
+        <!-- BURGER -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1550547660-d9450f859349"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">Beef Burger</h4>
+            <p>P45.00</p>
+        </div>
 
-<div class="menu-item">
-    <h3>Pasta</h3>
-    <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e" width="300">
-</div>
+        <!-- PIZZA (FIXED IMAGE) -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1601924582975-7e8c0b2b6b0f"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">Cheese Pizza</h4>
+            <p>P60.00</p>
+        </div>
 
-<footer>
+        <!-- PASTA -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1525755662778-989d0524087e"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">Creamy Pasta</h4>
+            <p>P55.00</p>
+        </div>
+
+        <!-- FRIES -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1541592106381-b31e9677c0e5"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">French Fries</h4>
+            <p>P30.00</p>
+        </div>
+
+        <!-- CHICKEN -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1604908176997-431b1e37b5b9"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">Grilled Chicken</h4>
+            <p>P70.00</p>
+        </div>
+
+        <!-- SALAD -->
+        <div class="col-md-4 text-center mb-4">
+            <img src="https://images.unsplash.com/photo-1556910103-1c02745aae4d"
+                 class="img-fluid rounded"
+                 style="height:250px; width:100%; object-fit:cover;">
+            <h4 class="mt-2">Fresh Salad</h4>
+            <p>P40.00</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center p-3 mt-4">
     <p>© 2026 Urban Eats</p>
 </footer>
-<script src="js/script.js"></script>
+
 </body>
 </html>
