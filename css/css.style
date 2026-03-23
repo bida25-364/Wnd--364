@@ -1,34 +1,82 @@
+/* GENERAL */
 body {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     margin: 0;
+    background-color: #e5e5e5; /* light grey */
 }
 
+/* HEADER */
 header {
-    background: #333;
+    background-color: #0d1b2a; /* dark blue */
     color: white;
-    padding: 15px;
     text-align: center;
+    padding: 20px;
 }
 
 nav a {
     color: white;
     margin: 10px;
     text-decoration: none;
+    font-weight: bold;
 }
 
-.hero {
+nav a:hover {
+    color: #000000; /* black hover */
+}
+
+/* HEADINGS */
+h1, h2, h3 {
+    color: #0d1b2a;
+}
+
+/* SECTIONS */
+section {
+    padding: 20px;
+}
+
+/* CARDS / MENU ITEMS */
+.col-md-4 {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.2);
+}
+
+/* BUTTONS */
+button {
+    background-color: #000000; /* black */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #333333;
+}
+
+/* IMAGES */
+img:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* FOOTER */
+footer {
+    background-color: #0d1b2a;
+    color: white;
     text-align: center;
     padding: 20px;
 }
 
-.menu-item {
-    display: inline-block;
-    margin: 20px;
+/* SOCIAL ICONS */
+.social-icons a {
+    color: white;
+    margin: 10px;
+    font-size: 24px;
 }
 
-footer {
-    background: #222;
-    color: white;
-    text-align: center;
-    padding: 10px;
+.social-icons a:hover {
+    color: #cccccc;
 }
